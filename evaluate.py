@@ -16,7 +16,7 @@ val_path_2 = "chest-xray-pneumonia/chest_xray/val"  # Keeping this the same, as 
 test_path_2 = "dataset2/Data/test"
 
 # Load datasets
-train_dataset_2, val_dataset_2, test_dataset_2 = get_datasets(train_path_2, val_path_2, test_path_2)
+train_dataset_2, _, test_dataset_2 = get_datasets(train_path_2, val_path_2, test_path_2)
 
 # Load the pre-trained model
 model = load_model("updated_model.h5")
